@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Formulario</title>
+</head>
+<body>
+	<form action="RegistrarSocio.jsp" method="get">
+		<h1>Formulario Socio</h1>
+		<table style="width:100%">
+			<tr>
+				<th>Nombre:</th>
+				<td><input type="text" name="nombre" id="nombre"/></td>
+			</tr>
+			<tr>
+				<th>Apellido:</th>
+				<td><input type="text" name="apellido" id="apellido"/></td>
+			</tr>
+			<tr>
+				<th>Direccion:</th>
+				<td><input type="text" name="direccion" id="direccion"/></td>
+			</tr>
+			<tr>
+				<th>Poblacion:</th>
+				<td>
+					<select name="poblacion">
+						<option value = "bilbo">Bilbo</option>
+						<option value = "donostia">Donostia</option>
+						<option value = "gazteiz">Gazteiz</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th>Provincia:</th>
+				<td>
+					<select name="provincia">
+						<option value = "bizkaia">Bizkaia</option>
+						<option value = "gipuzkoa">Gipuzkoa</option>
+						<option value = "araba">Araba</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th>DNI:</th>
+				<td><input type="text" name="dni" id="dni"/></td>
+			</tr>
+		</table>
+			<input type ="submit" name="login" value="Login" />
+		<br>
+			<p><a href="VerSocios.jsp">Ver Socios</a></p>
+	</form>
+</body>
+</html>
