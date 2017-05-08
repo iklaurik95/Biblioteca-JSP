@@ -39,7 +39,8 @@
 				<td><%= socio.getDireccion() %></td>
 				<td><%= socio.getPoblacion() %></td>
 				<td><%= socio.getProvincia() %></td>
-				<td><%= socio.getDni() %></td>  					
+				<td><%= socio.getDni() %></td> 
+				<td><a href="BorrarSocio.jsp? id= <%=socio.getId()%> ">Borrar</a></td>					
 			</tr>
 		</tbody>
 		<% }%>
