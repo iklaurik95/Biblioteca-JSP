@@ -13,8 +13,7 @@
 <%@ page import="java.util.*" %>
 <%
 	Socio_modelo socioModelo = new Socio_modelo("biblioteca");
-%>
-	<% 
+
 	ArrayList<Socio> socios = socioModelo.select();
 	%>
 	<div>
@@ -34,16 +33,16 @@
 		%>
 		<tbody>
 			<tr>
-				<td><%=socio.getNombre() %></td>
-				<td><%= socio.getApellido() %></td>
-				<td><%= socio.getDireccion() %></td>
-				<td><%= socio.getPoblacion() %></td>
-				<td><%= socio.getProvincia() %></td>
-				<td><%= socio.getDni() %></td> 
-				<td><a href="BorrarSocio.jsp? id= <%=socio.getId()%> ">Borrar</a></td>					
-			</tr>
-		</tbody>
-		<% }%>
+				<td><%=socio.getNombre()%></td>
+				<td><%=socio.getApellido()%></td>
+				<td><%=socio.getDireccion()%></td>
+				<td><%=socio.getPoblacion()%></td>
+				<td><%=socio.getProvincia()%></td>
+				<td><%=socio.getDni()%></td> 
+				<td><a href="BorrarSocio.jsp?id=<%=socio.getId()%>">Borrar</a></td>
+				<td><a href="ActualizarSocio.jsp?id=<%=socio.getId()%>">Actualizar</a></td>				
+			</tr>		
+		<%}%>
 		</tbody>
 	</table>
 	</div>	
